@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Control your data on the Web: An introduction to Solid and Linked Data.</title>
+  <title>Your data and the Web: Solid & Linked Data.</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -11,8 +11,8 @@
 <body class="shower list">
   <header class="caption">
     <h1>
-      <a class="series" href="../">Control your data on the Web</a><br>
-      <a class="module" href="#title">An introduction to Solid and Linked Data</a>
+      <a class="series" href="#title">Your data and the Web</a><br>
+      <a class="module" href="#title">Solid & Linked Data</a>
     </h1>
     <p>
       <a href="https://rubendedecker.be/">Ruben Dedecker</a>,
@@ -34,8 +34,8 @@
 
   <div class="title slide" id="title">
     <h2>
-      <a class="series" href="../">Control your data on the Web</a><br>
-      <a class="module" href="#title" style="font-size: .99em">An introduction to Solid & Linked Data</a>
+      <a class="series" href="#title">Your data and the Web</a><br>
+      <a class="module" href="#title" style="font-size: .99em">Solid & Linked Data</a>
     </h2>
     <p class="author"><a href="https://rubendedecker.be/">Ruben Dedecker</a></p>
     <p class="affiliation">
@@ -49,76 +49,50 @@
     </p>
   </div>
 
-  <div class="toc slide" id="definition">
+  <div class="toc slide" id="toc-web-and-universality">
     <h2>
-      <a class="series" href="../">Web Fundamentals</a><br>
-      <a class="module" href="#title">A Bird’s-Eye View of the Web</a>
+      <a class="series" href="#title">Your data and the Web</a><br>
+      <a class="module" href="#title">Solid & Linked Data</a>
     </h2>
     <ul>
-      <li><a href="#origins">Dreams and visions</a></li>
-      <li class="current"><a href="#definition">The Web and universality</a>
+      <li class="current"><a href="#toc-web-and-universality">The Web and its universality</a>
         <ul>
-          <li class="current"><a href="#definition">Origins and aims</a></li>
-          <li><a href="#foundation">Technical foundations</a></li>
+          <li class="current"><a href="#toc-web-and-universality">Origins and aims</a></li>
+          <li><a href="#toc-breaking-universality">Breaking Universality</a></li>
         </ul>
       </li>
-      <li><a href="#opportunities-challenges">Opportunities and challenges</a></li>
+      <li><a href="toc-decentralization-solid">Decentralization and Solid</a></li>
+      <li><a href="toc-linked-data">A Linked Data Web</a></li>
     </ul>
   </div>
 
-  <div class="slide" id="vague-but-exciting">
+  <div class="cover slide" id="vague-but-exciting">
     <figure class="cover width">
       <img src="images/vague-but-exciting.jpg"
-           alt="[Tim Berners-Lee’s original proposal for what would become the Web]">
+          alt="[Tim Berners-Lee’s original proposal for what would become the Web]">
     </figure>
-  </div>
-
-  <div class="slide" id="invention">
-    <h2>
-      Tim Berners-Lee invented<br>
-      the World Wide Web.
-    </h2>
-    <ul>
-      <li>
-        Here at CERN!
-      </li>
-      <li>
-        He drafted <cite><a href="https://www.w3.org/History/1989/proposal.html">Information Management: A Proposal</a></cite>
-        <dl>
-          <dt>goal</dt>
-          <dd>facilitating information sharing</dd>
-          <dt>needs</dt>
-          <dd>heterogeneity</dd>
-          <dd>decentralization</dd>
-          <dd><em>live</em> links</dd>
-          <dd>…</dd>
-        </dl>
-      </li>
-      <li>
-        The <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">first Web page</a> came online in 1990.
-        <ul>
-          <li>accessible from anywhere in the world</li>
-          <li>any other page in the world can link to it (even today!)</li>
-        </ul>
-      </li>
-    </ul>
+    <footer>
+      <p>
+        In March 1989, Tim Berners-Lee submitted a proposal for an information management system to his boss, Mike Sendall. 
+        <a href="http://info.cern.ch/Proposal.html">‘Vague, but exciting’</a>, were the words that Sendall wrote on the proposal.
+      </p>
+    </footer>
   </div>
 
   <div class="slide" id="heterogeneity">
     <h2>
-      The world before the Web<br>
-      was highly heterogeneous.
+      Before the Web
     </h2>
     <ul>
       <li>
-        Exchanging information was hard.
+        Exchanging information was <a href="https://www.youtube.com/watch?v=OM6XIICm_qo">hard</a>
         <ul>
           <li>different hardware</li>
           <li>different software</li>
         </ul>
       </li>
       <li class="next">
-        Innovation was hard.
+        Innovation was hard
         <ul>
           <li>For which machines do we build?</li>
           <li>For which operating systems do we build?</li>
@@ -129,8 +103,7 @@
 
   <div class="slide" id="universality">
     <h2>
-      The Web strives to be <em><a href="https://www.w3.org/2005/Talks/0323-yorkshire-tbl/slide5-2.html">universal</a></em><br> through
-      independence of many factors.
+      The Web strives to be <em><a href="https://www.w3.org/2005/Talks/0323-yorkshire-tbl/slide5-2.html">universal</a></em>
     </h2>
     <ul>
       <li>
@@ -151,19 +124,25 @@
         </dl>
       </li>
       <li class="next">
-       Anyone is free to innovate.
+       Anyone is free to innovate
         <ul>
-          <li>Build for the Web.</li>
-          <li>Standards provide interoperability.</li>
+          <li>Build for the Web</li>
+          <li>Standards provide interoperability</li>
         </ul>
       </li>
     </ul>
   </div>
 
+  <div class="slide" id="web-scale">
+    <blockquote class="next">
+      <p>Individual links are allowed to break<br>so the entire Web does not</p>
+      <cite><a href="https://www.wired.co.uk/magazine/archive/2014/03/web-at-25/tim-berners-lee">Tim Berners-Lee</a></cite>
+    </blockquote>
+  </div>
+
   <div class="slide" id="for-everyone">
     <h2>
-      CERN decided to make the Web<br>
-      available royalty-free in 1993.
+      Released <a href="https://home.cern/science/computing/birth-web/licensing-web">royalty-free</a> in 1993
     </h2>
     <figure class="width">
       <img src="images/www-release.jpg"
@@ -171,215 +150,75 @@
     </figure>
   </div>
 
-
-  <div class="slide" id="communication">
+  <div class="slide" id="permissionless-innovation">
     <h2>
-      Communication evolved together<br>
-      with the Web.
+      The Web brings <em>permissionless innovation</em><br>
+      at a global scale
     </h2>
     <ul>
-      <li>
-        The Web is democratic.
-        <ul>
-          <li>everyone can read information</li>
-          <li>everyone can write information</li>
-        </ul>
+      <li class="next">
+        Anyone can build anything for any reason
       </li>
-      <li>
-        Blogs emerged as a medium to spread thoughts.
+      <li class="next">
+        The technologies are open
       </li>
-      <li>
-        The “Web 2.0” ideas made many users<br>
-        transition from consumers to <em>prosumers</em><br>
-        as social media platforms take center stage.
+      <li class="next">
+        You don’t need anyone’s permission<br>
+        to join the Web and launch a new idea
       </li>
     </ul>
-  </div>
-
-  <div class="slide" id="education">
-    <h2 style="color: red">
-      Education evolved together<br>
-      with the Web.
-    </h2>
-    <ul>
-      <li>
-        The free encyclopedia
-        <a href="https://www.wikipedia.org/">Wikipedia</a> started in 2001.
-        <ul>
-          <li>freely accessible knowledge for all</li>
-          <li>not always <a href="https://en.wikipedia.org/wiki/Reliability_of_Wikipedia">reliable</a> though</li>
-        </ul>
-      </li>
-      <li>
-        Massive Open Online Courses soon followed.
-        <ul>
-          <li>learning from top teachers and universities in the world</li>
-          <li>
-            examples:
-            <a href="https://www.khanacademy.org/">Khan Academy</a>,
-            <a href="https://www.coursera.org/">Coursera</a>,
-            …
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-  <div class="slide" id="business">
-    <h2 style="color: red">
-      Business evolved together<br>
-      with the Web.
-    </h2>
-    <ul>
-      <li>Pizza Hut accepted online orders already in 1994.</li>
-      <li>Amazon and many others exploit the <em>long tail</em>.</li>
-    </ul>
-    <iframe class="next image" src="images/long-tail.svg"></iframe>
   </div>
 
   <div class="slide" id="freedom-of-expression">
     <h2>
       The Web brings <em>freedom of expression</em><br>
-      to everyone across the world.
+      to everyone across the world
     </h2>
     <ul>
       <li class="next">
-        <q>Anyone can say anything about anything.</q>
-      </li>
-      <li class="next">
-        We all have our own spaces,<br>
-        so we don’t have to agree.
+        <q>Anyone can say anything about anything</q>
       </li>
       <li class="next">
         We can <em>link</em> to opinions of others<br>
-        to discuss about them.
+        to discuss about them
+      </li>
+      <li>
+        The “Web 2.0” ideas transition users<br>
+        from consumers to <em>prosumers</em>
       </li>
     </ul>
   </div>
 
-  <div class="slide" id="permissionless-innovation">
-    <h2>
-      The Web brings <em>permissionless innovation</em><br>
-      at a global scale.
-    </h2>
-    <ul>
-      <li class="next">
-        Anyone can build anything for any reason.
-      </li>
-      <li class="next">
-        The technologies are open.
-      </li>
-      <li class="next">
-        You don’t need anyone’s permission<br>
-        to join the Web and launch a new idea.
-        <ul>
-          <li class="next">
-            This contrast with app stores.
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
 
   <div class="slide" id="unprecedented-creativity">
     <h2>
-      Permissionless innovation has brought<br>
-      unprecedented creativity to the world.
+      The Web enabled unprecedented creativity
     </h2>
     <figure class="cover width">
-      <img src="images/companies.svg" alt="">
+      <img src="images/brand_logos.jpg" alt="">
     </figure>
   </div>
 
-  <div class="toc slide" id="foundation">
+  <div class="toc slide" id="toc-breaking-universality">
     <h2>
-      What is the Web?
-    </h2>
-    
-  </div>
-
-
-  <div class="slide" id="decentralized">
-    <h2>
-      Web linking is decentralized, implemented<br>
-      as one-way links embedded in documents.
+      <a class="series" href="#title">Your data and the Web</a><br>
+      <a class="module" href="#title">Solid & Linked Data</a>
     </h2>
     <ul>
-      <li class="next">
-        essentials <em>inside</em> of HTML documents (not shared)
+      <li class="current"><a href="#toc-web-and-universality">The Web and its universality</a>
         <ul>
-          <li>text</li>
-          <li>hyperlinks</li>
+          <li class="current"><a href="#toc-web-and-universality">Origins and aims</a></li>
+          <li><a href="#toc-breaking-universality">Breaking Universality</a></li>
         </ul>
       </li>
-      <li class="next">
-        the rest <em>outside</em> of HTML documents (shareable)
-        <ul>
-          <li>styling <em>(fonts, colors, …)</em></li>
-          <li>media <em>(images, video, …)</em></li>
-          <li>scripts</li>
-        </ul>
-      </li>
+      <li><a href="toc-decentralization-solid">Decentralization and Solid</a></li>
+      <li><a href="toc-linked-data">A Linked Data Web</a></li>
     </ul>
   </div>
-
-  <div class="slide" id="web-scale">
-    <h2>
-      The Web a hypertext system<br>
-      simple enough to scale to the world.
-    </h2>
-    <blockquote class="next">
-      <p>Individual links are allowed to break<br>so the entire Web does not.</p>
-      <cite><a href="https://www.wired.co.uk/magazine/archive/2014/03/web-at-25/tim-berners-lee">Tim Berners-Lee</a></cite>
-    </blockquote>
-    <footer>
-      <p>Other hypertext systems were much more advanced,
-         but only the Web could spread world-wide.</p>
-    </footer>
-  </div>
-
-  <div class="slide" id="operating-systems">
-    <h2>
-      The Web’s universality<br>
-      helped accelerate its growth.
-    </h2>
-    <ul>
-      <li>
-        HTTP and HTML were OS-independent.
-        <ul>
-          <li>Yet the server and browser were NeXT-specific.</li>
-        </ul>
-      </li>
-      <li>
-        Support for other systems followed in 1992.
-        <ul>
-          <li>Notably <a href="http://www.ncsa.illinois.edu/enabling/mosaic">Mosaic</a>
-              gave the Web a broader audience.</li>
-        </ul>
-      </li>
-      <li>
-        It provides compatibility at an unprecedented scale.
-        <ul>
-          <li>The text-based browser <a href="https://lynx.invisible-island.net/">Lynx</a> is still developed and used.</li>
-          <li>Your phone can access websites created 20 years ago.</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-
-  <div class="toc slide" id="opportunities-challenges">
-    <h2>
-      Breaking Web universality
-    </h2>
-  </div>
-
 
   <div class="slide" id="best-viewed-nineties">
     <h2>
-      When websites are coded to browsers<br>
-      rather than to standards,
-      users suffer.
+      The browser wars
     </h2>
     <figure>
       <img src="images/best-viewed.png"
@@ -389,8 +228,7 @@
 
   <div class="slide" id="best-viewed-twenties">
     <h2>
-      Unfortunately, <q>best viewed with</q><br>
-      is back from never gone.
+      <q>best viewed with</q>, back from never gone
     </h2>
     <figure>
       <img src="images/best-viewed-with-twitter.png"
@@ -398,107 +236,37 @@
     </figure>
   </div>
 
-  <div class="slide" id="native-apps">
-    <h2>
-      Native apps essentially undo<br>
-      all progress on device-independence.
-    </h2>
-    <ul>
-      <li class="next">
-        Before the Web, we needed specific software<br>
-        to consume any kind of information.
-      </li>
-      <li class="next">
-        Thanks to the Web, we only need a <a href="https://ruben.verborgh.org/blog/2016/08/04/use-the-web-instead/">generic browser</a><br>
-        to consume the world’s knowledge.
-        <ul>
-          <li>This led to <a href="#permissionless-innovation">permissionless innovation</a>.</li>
-        </ul>
-      </li>
-      <li class="next">
-        Once more, we need specific apps.
-        <ul>
-          <li>Innovation becomes expensive and exclusive.</li>
-          <li>Your browser works for <em>you</em>—an app not necessarily.</li>
-        </ul>
-      </li>
-    </ul>
+  <div class="slide cover" id="login-register">
+    <figure class="cover height">
+      <img class="" src="images/login-register.png" alt="[photo of a ladder]">
+    </figure>
   </div>
-
+  
   <div class="slide" id="centralization">
     <h2>
-      <em>Centralization</em> from multiple angles<br>
-      is threatening the Web.
-    </h2>
-    <p>
-      <em>Technological</em> decentralization can differ from practice:
-    </p>
-    <ul>
-      <li>
-        browser vendors
-        <ul class="next">
-          <li>Only certain devices and software can access the Web.</li>
-        </ul>
-      </li>
-      <li>
-        search engines
-        <ul class="next">
-          <li>A few companies make or break websites.</li>
-        </ul>
-      </li>
-      <li>
-        platforms (especially social networks)
-        <ul class="next">
-          <li>You need a specific account to use the Web.</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-  <div class="slide" id="centralization-consequences">
-    <h2>
-      The current massive centralization<br>
-      hurts diversity, innovation, and choice.
+      Our data has become centralized<br>
+      in a handful of Web platforms
     </h2>
     <ul>
-      <li class="next">
-        If you can integrate one service…
+      <li class="no-next">
+        People’s former personal blogs<br>
+        are now on Facebook and Twitter
         <ul>
-          <li>
-            will it be <em>facebook.com</em>
-            or <em>private-identity-provider.org</em>?
-          </li>
+          <li class="no-next">great user experience</li>
+          <li class="no-next">but we lost control</li>
         </ul>
       </li>
-      <li class="next">
-        Developers depend on <em>centralized platforms</em><br>
-        for data and identity.
-        <ul class="next">
-          <li>…or they have to become such a platform themselves.</li>
-        </ul>
+      <li class="no-next">
+        People lose (control of) their data
       </li>
-      <li class="next">
-        People lose control of their data<br>
-        and cannot easily switch to other apps.
+      <li class="no-next">
+        The Web’s universality is visibly threatened
         <ul>
-          <li>Innovation cannot attract locked-in customers.</li>
-        </ul>
+          <li class="no-next"><q>Sign in with Facebook to see this content</q></li><li>
+          </li><li class="no-next"><q>Twitter is better on the app</q></li><li>
+        </li></ul>
       </li>
     </ul>
-  </div>
-
-  <div class="slide" id="web-we-have-to-save">
-    <figure class="cover width">
-      <img src="images/web-we-have-to-save.jpg"
-           alt="[Illustration from the blog post “The Web We Have to Save”]">
-      <figcaption>
-        ©2015 <a href="https://medium.com/matter/the-web-we-have-to-save-2eb1fe15a426">Tim McDonagh</a>
-      </figcaption>
-    </figure>
-    <p class="next label" style="top:370px;left:450px"><a href="https://medium.com/matter/the-web-we-have-to-save-2eb1fe15a426"><em>Is this the Web<br>I went to jail for?</em></a></p>
-    <footer>
-      <p>Do we still have the <a href="https://webwewant.org/">Web we want</a>?</p>
-    </footer>
   </div>
 
   <div class="slide" id="ladder">
@@ -527,6 +295,19 @@
     </figure>
   </div>
 
+  <div class="dark slide cover" id="web-we-have-to-save">
+    <h2>
+      Within the walled gardens on the Web,<br>
+      you have to move either data or people
+    </h2>
+    <figure class="cover width">
+      <img src="images/walled-gardens.jpg" alt="">
+      <figcaption>
+        © David Simonds
+      </figcaption>
+    </figure>
+  </div>
+
   <div class="slide" id="internet-org">
     <figure class="cover width">
       <a href="https://www.theguardian.com/technology/2016/may/12/facebook-free-basics-india-zuckerberg">
@@ -537,9 +318,6 @@
         ©2015 <a href="https://www.theguardian.com/technology/2016/may/12/facebook-free-basics-india-zuckerberg#img-6">Danish Siddiqui / Reuters</a>
       </figcaption>
     </figure>
-    <p class="next label" style="bottom:0px;right:20px">
-      Companies will always try to <a href="https://www.theguardian.com/technology/2016/may/12/facebook-free-basics-india-zuckerberg">control the Web</a><br>
-    </p>
   </div>
 
 
@@ -551,7 +329,7 @@
       </a>
     </figure>
     <p class="next label" style="bottom:0px;right:20px">
-      try browsing to <a href="https://internet.org/">https://internet.org/</a> ...
+      <a href="https://internet.org/">The metaverse on https://internet.org</a>
     </p>
   </div>
 
@@ -561,14 +339,26 @@
             alt="[A list of Google products.]" style="left: 27%;">
     </figure>
     <p class="next label" style="bottom:0px;right:20px">
-      How many <a href=https://about.google/products/>Google products</a><br> do you use?
+      How dependent are you<br>
+      on the <a href=https://about.google/products/>Google ecosystem</a>?
     </p>
   </div>
 
-  <div class="slide toc" id="taking-back-control">
+  <div class="toc slide" id="toc-decentralization-solid">
     <h2>
-      How can we take back control?
+      <a class="series" href="#title">Your data and the Web</a><br>
+      <a class="module" href="#title">Solid & Linked Data</a>
     </h2>
+    <ul>
+      <li class="current"><a href="#toc-web-and-universality">The Web and its universality</a>
+        <ul>
+          <li class="current"><a href="#toc-web-and-universality">Origins and aims</a></li>
+          <li><a href="#toc-breaking-universality">Breaking Universality</a></li>
+        </ul>
+      </li>
+      <li><a href="toc-decentralization-solid">Decentralization and Solid</a></li>
+      <li><a href="toc-linked-data">A Linked Data Web</a></li>
+    </ul>
   </div>
   
   <div class="slide" id="redecentralizing-the-web">
@@ -582,52 +372,6 @@
       </figcaption>
     </figure>
   </div>  
-
-  <div class="slide" id="ecosystem-integration">
-    <h2>
-      Integration empowers the ecosystem
-    </h2>
-    <ul>
-      <li>
-      Your data does not need to be stuck<br>
-      in a single ecosystem!
-      </li>
-    </ul>
-    <figure class="width">
-      <img src="images/big_ecosystems.jpg"
-           alt="[Depicting the duplicate functionality in big ecosystems as cross-integration is not wanted]">
-    </figure>
-  </div>
-
-  <div class="slide" id="decentralization-control">
-    <h2>
-      Decentralization empowers the user  
-    </h2>
-    <ul>
-      <li>
-        Decentralization enables <em>control</em>
-        <ul>
-          <li>
-            people can choose where they store their data
-          </li>
-          <li>
-            Mastodon lets you take your account with you
-          </li>
-        </ul>
-      </li>
-      <li>
-        Decentralization enables <em>trust</em>
-        <ul>
-          <li>
-            trust and censoring no longer reliant on single platform
-          </li>
-          <li>
-            users can migration to other platforms and services
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
 
   <div class="slide" id="decentralization-choice">
     <h2>
@@ -649,144 +393,122 @@
     </ul>
   </div>
 
-  <div class="slide" id="choice">
+  <div class="slide" id="the-pod">
     <h2>
-      Solid aims to restore <em>choice</em><br>
-      by separating data from apps.
+      The Solid Personal Online Datastore
+    </h2>
+    <figure class="width">
+      <img src="images/store-anything-tour.svg"
+        alt="[The POD as the source of your data]">
+        <figcaption>
+          © <a href="https://solidproject.org/">solidproject</a>
+        </figcaption>
+    </figure>
+    </ul>
+  </div>
+
+  <div class="slide" id="my-data-at-center">
+    <h2>
+      <em>My POD</em> as the source for <em>my data</em>
+    </h2>
+    <ul>
+      <li>I can store and link anything I want</li>
+      <li>
+        You can keep up to date
+        <ul>
+          <li>
+            You can poll me for my data
+          </li>
+          <li>
+            I can push you my updates
+          </li>
+        </ul>
+      </li>
+      <li>
+        You can aggregate from multiple sources
+        <ul>
+          <li>
+            Aggregation provides scalability where needed
+          </li>
+          <li>
+            Aggregation can keep up to date with its sources
+          </li>
+        </ul>
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="slide" id="views">
+    <h2>
+      Foster <em>choice</em> and <em>innovation</em> on the Web<br>
+      by separating data from apps
+    </h2>
+    <figure class="width">
+      <img src="images/pod-at-the-center-tour.svg" 
+        alt="[separation leads to higher potential for the Web]">
+        <figcaption>
+          © <a href="https://solidproject.org/">solidproject</a>
+        </figcaption>
+    </figure>
+  </div> 
+
+  <div class="slide" id="trust-in-data">
+    <h2>
+      Choose the data you <em>trust</em>
     </h2>
     <ul>
       <li>
-        Typical platforms nowadays store data<br>
-        inseparably from an application.
+        Track <b>provenance</b> of data
         <ul>
-          <li class="next">If we need to access the data, we cannot choose our app.</li>
-          <li class="next">If we need to use the app, we can’t choose our data source.</li>
+          <li>
+            you can keep track of the source of data
+          </li>
+          <li>
+            you can ignore data of which you do not trust the source
+          </li>
         </ul>
       </li>
-      <li class="next">
-        By separating data from apps,<br>
-        we create independent choices.
+      <li>
+        <b>Verify</b> data to ensure authenticity
         <ul>
-          <li class="next">
-            In essence, we‘re taking Web apps back to desktop mode,<br>
-            where one file can be opened by multiple apps.
+          <li>
+            Do not only provide data, provide verification
+          </li>
+          <li>
+            Signatures provide trust in provenance
           </li>
         </ul>
       </li>
     </ul>
   </div>
 
-  <div class="slide" id="data-pods">
+  <div class="slide" id="connectivity">
     <h2>
-      Every piece of data created <em>by</em> a person<br>
-      or <em>about</em> them, is stored in a data pod.
+      Connectivity is key
     </h2>
-    <figure class="cover width margin">
-      <img src="images/data-pods.svg" alt="">
+    <figure class="width margin">
+      <img src="images/connect-anyone-tour.svg" alt="Solid PODs enable a connected network of data">
+      <figcaption>
+        © <a href="https://solidproject.org/">solidproject</a>
+      </figcaption>
     </figure>
   </div>
 
   <div class="slide" id="decentralized-data">
     <h2>
-      Apps and services appear similarly,<br>
-      but they blend data from many sources.
+      Why restrict ourselves to one source?
     </h2>
-    <figure class="cover height margin">
+    <figure class="height margin">
       <img src="images/decentralized-data.svg" alt="">
     </figure>
   </div>
-
-  <div class="slide" id="views">
-    <h2>
-      A person can grant apps and people access<br>
-      to very specific parts of their data.
-    </h2>
-    <figure class="cover width margin">
-      <img src="images/apps-as-views.svg" alt="">
-    </figure>
-  </div>
-
-  <div class="slide" id="markets">
-    <h2>
-      Separating app and storage competition<br>
-      creates better offerings for all parties.
-    </h2>
-    <figure class="cover width margin">
-      <img src="images/data-and-app-markets.svg" alt="">
-    </figure>
-  </div>
-
-  <div class="slide toc" id="solid-technologies">
-    <h2>
-      Solid technologies
-    </h2>
-  </div>
-
-  <div class="slide" id="ecosystem">
-    <h2>
-      Solid is not a platform to replace others,<br>
-      but a way of building for the Web.
-    </h2>
-    <ul>
-      <li>
-        Solid is an ecosystem.
-        <ul>
-          <li class="next">Standards enable interoperability.</li>
-        </ul>
-      </li>
-      <li>
-        Solid is a movement.
-        <ul>
-          <li class="next">We need to shift the app builder mindset.</li>
-        </ul>
-      </li>
-      <li>
-        Solid is a community.
-        <ul>
-          <li class="next">
-            Building Solid requires different people,<br>
-            companies, and organisations.
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
   
-
-  <div class="slide" id="server">
-    <h2>
-      A Solid server acts as a data pod<br>
-      that stores and guards your data.
-    </h2>
-    <ul>
-      <li class="next">
-       It is a regular Web server
-        <ul>
-          <li>…with support for access control.</li>
-          <li>…with support for Linked Data.</li>
-        </ul>
-      </li>
-      <li class="next">
-       Its interface is application-agnostic.
-        <ul>
-          <li>Build <em>any</em> application, like on the Web.</li>
-          <li>Application-specific logic resides in clients.</li>
-        </ul>
-      </li>
-      <li class="next">
-        A Solid pod is essentially a website with data.
-        <ul>
-          <li>Its data is compatible with any Solid app.</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
 
   <div class="slide" id="data-pod">
     <h2>
       A data pod can contain any data<br>
-      you create or need online.
+      you create or need online
     </h2>
     <ul>
       <li>profile 👤</li>
@@ -797,39 +519,10 @@
     </ul>
   </div>
 
-
-  <div class="slide" id="client">
-    <h2>
-      Solid clients are browser or native apps<br>
-      that read from or write to your data pod.
-    </h2>
-    <ul>
-      <li>
-        People give read and/or write permissions<br>
-        for specific pieces of data to:
-        <ul>
-          <li>apps</li>
-          <li>other people</li>
-          <li>automated agents</li>
-          <li>…</li>
-        </ul>
-      </li>
-      <li class="next">
-        Apps deliver an integrated experience.
-        <ul>
-          <li>
-            Instead of displaying individual webpages or data items,<br>
-            apps interleave data from multiple sources.
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
   <div class="slide" id="apps">
     <h2>
       Any app you can envision,<br>
-      you can build with Solid.
+      you can build with Solid
     </h2>
     <ul>
       <li>calendar 📅</li>
@@ -840,6 +533,44 @@
     </ul>
   </div>
 
+  <div class="toc slide" id="toc-linked-data">
+    <h2>
+      <a class="series" href="#title">Your data and the Web</a><br>
+      <a class="module" href="#title">Solid & Linked Data</a>
+    </h2>
+    <ul>
+      <li class="current"><a href="#toc-web-and-universality">The Web and its universality</a>
+        <ul>
+          <li class="current"><a href="#toc-web-and-universality">Origins and aims</a></li>
+          <li><a href="#toc-breaking-universality">Breaking Universality</a></li>
+        </ul>
+      </li>
+      <li><a href="#toc-decentralization-solid">Decentralization and Solid</a></li>
+      <li><a href="#toc-linked-data">A Linked Data Web</a></li>
+    </ul>
+  </div>
+
+  <div class="slide" id="multiple-backends">
+    <h2>
+       Our data needs to scale to the Web!
+    </h2>
+    <figure class="cover width margin">
+      <img src="images/multiple-backends.svg" alt="">
+    </figure>
+  </div>
+
+  <div class="slide" id="api-growth">
+    <h2>
+      How many Web interfaces <br>
+      are you willing to integrate?
+    </h2>
+    <p class="label">number of Web APIs<br>indexed in <a href="https://www.programmableweb.com/">ProgrammableWeb</a></p>
+
+    <figure class="width">
+      <img src="images/web-api-growth.svg"
+          alt="[ProgrammableWeb shows an increasing trend in number of indexed Web APIs]">
+    </figure>
+  </div>
 
 
   <div class="slide" id="hypermedia">
@@ -863,124 +594,40 @@
     </ul>
   </div>
 
-  <div class="slide" id="solid-examples">
-    <h2 style="color: red">
-      We need some more content here. 
-      Examples of apps, ...
-    </h2>  
-  </div>
-
-  <div class="slide" id="solid-examples">
+  <div class="slide" id="linked-data">
     <h2>
-      Reuse existing data
+      Linked Data 
     </h2>
-    <p style="color: red">
-      Data that exists on the pod can be reused, and we're not limited to what Google or facebook or ... allows us to store.
-      We can store and share any kind of data.
-      new apps can reuse this, without being limited by current platforms.
-    </p>
-  </div>
-
-  <div class="slide" id="solid-examples">
-    <h2>
-      My data at the center
-    </h2>
-    <ul style="color: red">
-      <li>
-        Image showing that if your data changes, the apps change with it
-      </li>
-      <li>
-        Data can always be kept up to date
-      </li>
-      <li>
-        No more stale data, letters being sent to your old address, ...
-      </li>
-    </ul>
-  </div>
-
-  <div class="slide" id="solid-examples">
-    <h2>
-      Cross-platform connectivity
-    </h2>
-    <ul style="color: red">
-      <li>
-        Preferably image here
-      </li>
-      <li>
-        Identifiers on the Web should not be tied to specific ecosystems.
-      </li>
-      <li>
-        My decentralized Identifier can follow me everywhere, any app is free to request access to my data.
-      </li>
-    </ul>
-  </div>
-
-  <div class="slide" id="harvesting-interoperability">
-    <h2>
-      Trade data harvesting<br>
-      for interoperbility<br>
-    </h2>
-    <figure class="cover width margin">
-      <img src="images/infinite-innovation.svg" alt="">
+    <figure class="cover height">
+      <img class="" src="images/linked-data.jpg" alt="[A Linked Data Graph]">
     </figure>
   </div>
 
-  <div class="toc slide" id="linked-data-and-rdf">
+  <div class="slide" id="i-like-blog">
     <h2>
-      Solving decentralization challenges with Linked Data and RDF
+      I want to like a blog!  
     </h2>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p style="color: red;">
-      I should probably introduce RDF a lot better here.
-      How would I do that without using too much time
+    <p>
+      On Facebook?
+    </p>
+    <p>
+      On Twitter?
+    </p>
+    <p>
+      On Tumblr?
+    </p>
+    <p>
+      <b>
+        On the Web!
+      </b>
     </p>
   </div>
 
-  <div class="slide" id="complicated">
-    <h2>
-      Simple tasks should be simple,<br>
-      complex tasks should be manageable.
-    </h2>
-    <blockquote>
-      <p class="next">
-        People think RDF is a pain<br>
-        because it is complicated.<br>
-        The truth is even worse.
-      </p>
-      <p class="next">
-        RDF is painfully simplistic,<br>
-        but it allows you to work with real-world data<br>
-        and problems that are horribly complicated.
-      </p>
-      <cite><a href="https://book.validatingrdf.com/bookHtml005.html">Dan Brickley &amp; Libby Miller</a></cite>
-    </blockquote>
-  </div>
-
-  <div class="slide" id="multiple-backends">
-    <h2>
-      Decentralized apps have many back-ends<br>
-      that need to work with many apps.
-    </h2>
-    <figure class="cover width margin">
-      <img src="images/multiple-backends.svg" alt="">
-    </figure>
-  </div>
-
-  <div class="slide" id="api-growth">
-    <h2>
-      API integration limits our scaling
-    </h2>
-    <p class="label">number of Web APIs<br>indexed in <a href="https://www.programmableweb.com/">ProgrammableWeb</a></p>
-    <iframe class="image" src="images/web-api-growth.svg"></iframe>
-  </div>
 
   <div class="slide" id="linking">
     <h2>
-      If I like a your blog, I need a way<br>
-      to connect my like to your blog.
+      If I like your blog, I need a way<br>
+      to <em>connect</em> my like to your blog.
     </h2>
     <pre><code>{
   <span class="prefix">"@context":  "https://www.w3.org/ns/activitystreams",</span>
@@ -994,7 +641,7 @@
 
   <div class="slide" id="semantics">
     <h2>
-      My like needs a univeral meaning<br>
+      My like needs a <em>univeral meaning</em><br>
       so different apps can reuse it
     </h2>
     <pre><code>{
@@ -1010,7 +657,7 @@
   <div class="slide" id="integration">
     <h2>
       Data from different sources<br>
-      must easily be concatenated.
+      must easily be <em>combined</em>.
     </h2>
     <pre><code style="font-size: .7em; line-height: 2em;">{ <span class="prefix">"@context":  "https://www.w3.org/ns/activitystreams",</span>
   <span class="prefix">"@graph":</span> [{
@@ -1026,23 +673,17 @@
   }]
 }</code></pre>
   </div>
-  
-  <div class="slide" id="linked-data-introduction">
-    <h2 style="color: red;">
-      We need some slides as introduction to Linked Data here more
-    </h2>
-  </div>
 
   <div class="slide" id="transparency">
-    <h2 style="color: red;">
-      Linked Data can be made <em>transparent</em>
+    <h2>
+      Isn't Linked Data too complicated?
     </h2>
     <ul>
       <li>
         We can abstract it for the developer
         <ul>
           <li>
-            You don't know how your data is stored 
+            We can build interfaces that are familiar
           </li>
         </ul>
 
@@ -1051,64 +692,55 @@
         We can make it invisible for the user
         <ul>
           <li>
-            You don't need to know how your data is stored
-          </li>
-          <li>
-            applications enable you to choose how to use it.
+            Do you know how your data is stored by Google?
           </li>
         </ul>
       </li>
     </ul>
   </div>
+
+  <div class="slide toc title" id="take-advantage">
+    <h2 style="line-height: 1em;">
+      Take advantage<br>
+      of the Web!
+    </h2>
+  </div>
+
   
-  <div class="toc slide" id="takeaways">
+  <div class="slide" id="my-cv">
     <h2>
-      So what do we end up with
+      I can fill my CV from my pod 
     </h2>
-  </div>
 
-  
-  <div class="slide" id="envisioned-solid-ecosystem">
-    <h2 style="color: red;">
-      Introduce the Envisioned Solid ecosystem
-    </h2>
-    <ul>
-      <li>
-        Login with Solid
-      </li>
-      <li>
-        greeted with your existing information
-      </li>
-      <li>
-        added information is linked
-      </li>
-    </ul>
+    <iframe class="website" src="https://rubendedecker.be/"></iframe>
   </div>
   
-  <div class="slide" id="connectivity">
-    <h2 style="color: red;">
-      Linked Data Enables Connectivity (Comunica)
+  <div class="slide" id="my-presentations">
+    <h2>
+      I can host my presentations on my pod
     </h2>
-    <ul>
-      <li>
-        Comunica example of querying over Solid pods.
-      </li>
-      <li>
-        contact connection application
-      </li>
-    </ul>
+    <iframe class="website" src="https://pod.rubendedecker.be/scholar/presentations/"></iframe>
   </div>
-
-
-
-
-
-
-
+  
+  <div class="slide" id="my-data">
+    <h2>
+      I can follow my nose
+    </h2>
+    <iframe class="website" src="https://comunica.github.io/comunica-feature-link-traversal-web-clients/builds/solid-default/#datasources=https%3A%2F%2Fpod.rubendedecker.be%2Fprofile%2Fcard%23me&query=PREFIX%20foaf%3A%20%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0ASELECT%20DISTINCT%20*%20WHERE%20%7B%0A%20%20%20%20%3Chttps%3A%2F%2Fpod.rubendedecker.be%2Fprofile%2Fcard%23me%3E%20foaf%3Aknows%20%3Fperson.%0A%20%20%20%20%3Fperson%20foaf%3Aname%20%3Fname.%0A%7D"></iframe>
+  </div>
+  
+  <div class="slide title" id="how-can-I-improve">
+    <h2></h2>
+    <p><b>
+      Next time you visit a Website,<br>
+      think how could I improve this<br>
+      by connecting it to my data POD?
+    </b><p>
+  </div>
 
 
   <footer>
-    <p class="badge"><a href="https://github.com/RubenVerborgh/WebFundamentals">View on GitHub</a></p>
+    <p class="badge"><a href="https://github.com/Dexagod/introduction-slides-solid-linked-data">View on GitHub</a></p>
     <p class="license">
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="./_shared/images/cc-by-small.svg" /></a>
       Except where otherwise noted, the content of these slides is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
